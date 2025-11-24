@@ -1,0 +1,23 @@
+An identifier is a name given to a program element to uniquely identify it within the code.
+
+Identifiers are used to name variables, functions, arrays, structures, unions, enumerations, and labels. They allow you to refer to and manipulate these entities throughout your program.
+
+Rules of identifiers:
+
+1] identifiers must be unique
+2] it contain only [a-z, A-Z, 0-9, _]
+3] you can not start with the digit 1_level, _1level
+4] white-space are not allow : first name, first_name
+5] special symbols are not allowed, @,!, #, $, %, ^, &, *....
+6] it is case sensitive firstname, FIRSTNAME, FirstName, Firstname, firstName
+7] keywords are not allowed
+
+
+Example:
+
+first name
+_first_name
+1_name
+@cProgramming
+if_yes
+level1_

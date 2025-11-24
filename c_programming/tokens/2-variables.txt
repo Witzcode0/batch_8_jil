@@ -1,0 +1,25 @@
+a variable is a named storage location in memory used to hold data. Variables are fundamental for storing and manipulating data during program execution.
+
+syntax:
+
+data_type var_name = value;
+
+Key aspects of C variables:
+Declaration: Before a variable can be used, it must be declared. This involves specifying its data type and a unique name (identifier). The data type determines the kind of values the variable can store (e.g., int for integers, float for floating-point numbers, char for characters) and the amount of memory it occupies.
+
+Example: 
+
+int age; // Declares an integer variable named 'age'
+float price; // Declares a floating-point variable named 'price'
+char initial; // Declares a character variable named 'initial'
+
+Initialization: Variables can be initialized with a value at the time of declaration or later in the program.
+
+int count = 10; // Declares and initializes 'count' to 10
+float salary;
+salary = 50000.0f; // Initializes 'salary' later
+    
+Example: 
+
+int age = 19;
+float weight = 34.67;

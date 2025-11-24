@@ -1,0 +1,44 @@
+Keywords in C are reserved words that have predefined meanings and cannot be used as identifiers (like variable names, function names, etc.) by the programmer.
+
+There are 32 keywords in the C language according to the ANSI C standard.These keywords are fundamental to defining the structure, data types, and control flow of a C program.
+
+Here is a list of the 32 keywords in C:
+--------------------------------------------------------------------------------------------------------------
+auto       break      case       char       const      continue
+default    do         double     else       enum       extern
+float      for        goto       if         int        long
+register   return     short      signed     sizeof     static
+struct     switch     typedef    union      unsigned   void
+volatile   while
+
+Categories and Examples of Keyword Usage:
+--------------------------------------------------------------------------------------------------------------
+Data Type Keywords: Define the type of data a variable can hold.
+- int: For integers (e.g., int age = 30;)
+- char: For single characters (e.g., char grade = 'A';)
+- float: For single-precision floating-point numbers (e.g., float price = 19.99;)
+- double: For double-precision floating-point numbers (e.g., double pi = 3.14159;)
+- void: Indicates no value or an empty set of parameters.
+
+Control Flow Keywords: Control the execution order of statements.
+--------------------------------------------------------------------------------------------------------------
+- if, else: For conditional execution (e.g., if (score > 90) { ... } else { ... })
+- for, while, do: For loops (e.g., for (int i = 0; i < 5; i++) { ... })
+- switch, case, default: For multi-way branching.
+- break, continue: For altering loop behavior.
+- goto: Transfers control to a labeled statement.
+- Storage Class Keywords: Define the scope and lifetime of variables.
+- auto: Default for local variables.
+- register: Suggests storing variables in CPU registers for faster access.
+- static: Preserves the value of a local variable between function calls or limits the scope of a global variable.
+- extern: Declares a variable or function defined in another file. 
+
+Other Keywords:
+--------------------------------------------------------------------------------------------------------------
+- const: Declares a constant value.
+- sizeof: Returns the size of a variable or data type in bytes.
+- struct, union, enum: For defining user-defined data types.
+- typedef: Creates an alias for an existing data type.
+- return: Returns a value from a function.
+- signed, unsigned, short, long: Type modifiers for integer types.
+- volatile: Indicates a variable whose value can be changed by external factors.
