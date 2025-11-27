@@ -1,44 +1,111 @@
-Keywords in C are reserved words that have predefined meanings and cannot be used as identifiers (like variable names, function names, etc.) by the programmer.
+a data type defines the type of data a variable can store and the amount of memory it will occupy. It also dictates the operations that can be performed on that data. C is a statically typed language, meaning the data type of a variable must be specified during its declaration and cannot be changed later.
 
-There are 32 keywords in the C language according to the ANSI C standard.These keywords are fundamental to defining the structure, data types, and control flow of a C program.
+C data types are broadly categorized as follows:
+    - Basic Data Types (Primary/Built-in): These are fundamental types for representing various numerical and character values.
+        int: Stores whole numbers (integers).
+        char: Stores single characters.
+        float: Stores single-precision floating-point numbers (numbers with decimal points).
+        double: Stores double-precision floating-point numbers, offering higher precision than float.
+        void: Represents the absence of a value, often used in function declarations.
+        _Bool: (or bool in C99 and later with <stdbool.h>) Stores Boolean values (true/false).
 
-Here is a list of the 32 keywords in C:
---------------------------------------------------------------------------------------------------------------
-auto       break      case       char       const      continue
-default    do         double     else       enum       extern
-float      for        goto       if         int        long
-register   return     short      signed     sizeof     static
-struct     switch     typedef    union      unsigned   void
-volatile   while
+    - Derived Data Types: These are constructed by combining basic data types to create more complex structures.
+        Arrays: Collections of elements of the same data type.
+        Pointers: Variables that store memory addresses of other variables.
+        Structures: User-defined data types that group together variables of different data types under a single name.
+        Unions: Similar to structures, but all members share the same memory location, allowing storage of different data types in the same space at different times.
 
-Categories and Examples of Keyword Usage:
---------------------------------------------------------------------------------------------------------------
-Data Type Keywords: Define the type of data a variable can hold.
-- int: For integers (e.g., int age = 30;)
-- char: For single characters (e.g., char grade = 'A';)
-- float: For single-precision floating-point numbers (e.g., float price = 19.99;)
-- double: For double-precision floating-point numbers (e.g., double pi = 3.14159;)
-- void: Indicates no value or an empty set of parameters.
+    - Enumerated Data Types (enum): These allow you to define a set of named integer constants, improving code readability and maintainability.
 
-Control Flow Keywords: Control the execution order of statements.
---------------------------------------------------------------------------------------------------------------
-- if, else: For conditional execution (e.g., if (score > 90) { ... } else { ... })
-- for, while, do: For loops (e.g., for (int i = 0; i < 5; i++) { ... })
-- switch, case, default: For multi-way branching.
-- break, continue: For altering loop behavior.
-- goto: Transfers control to a labeled statement.
-- Storage Class Keywords: Define the scope and lifetime of variables.
-- auto: Default for local variables.
-- register: Suggests storing variables in CPU registers for faster access.
-- static: Preserves the value of a local variable between function calls or limits the scope of a global variable.
-- extern: Declares a variable or function defined in another file. 
 
-Other Keywords:
---------------------------------------------------------------------------------------------------------------
-- const: Declares a constant value.
-- sizeof: Returns the size of a variable or data type in bytes.
-- struct, union, enum: For defining user-defined data types.
-- typedef: Creates an alias for an existing data type.
-- return: Returns a value from a function.
-- signed, unsigned, short, long: Type modifiers for integer types.
-- volatile: Indicates a variable whose value can be changed by external factors.
+    
+▣ %c (character):
+
+• Corresponding Data Type: char
+• Size: 1 byte
+• Range: -128 to 127 (signed) or 0 to 255 (unsigned)
+
+▣ %d (integer):
+
+• Corresponding Data Type: int
+• Size: 4 bytes
+• Range: -2,147,483,648 to 2,147,483,647
+
+▣ %u (unsigned integer):
+5
+-5
+• Corresponding Data Type: unsigned int
+• Size: 4 bytes
+• Range: 0 to 4,294,967,295
+
+▣ %ld (long integer):
+
+• Corresponding Data Type: long int
+• Size: 4 bytes
+• Range: -2,147,483,648 to 2,147,483,647
+
+▣ %lu (unsigned long integer):
+
+• Corresponding Data Type: unsigned long int
+• Size: 4 bytes
+• Range: 0 to 4,294,967,295
+
+▣ %lld (long long integer):
+
+• Corresponding Data Type: long long int
+• Size: 8 bytes
+• Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+▣ %llu (unsigned long long integer):
+
+• Corresponding Data Type: unsigned long long int
+• Size: 8 bytes
+• Range: 0 to 18,446,744,073,709,551,615
+
+▣ %f (float):
+
+• Corresponding Data Type: float
+• Size: 4 bytes
+• Range: Approximately 1.2E-38 to 3.4E+38 (6 decimal places of precision)
+
+▣ %lf (double):
+
+• Corresponding Data Type: double
+• Size: 8 bytes
+• Range: Approximately 2.3E-308 to 1.7E+308 (15 decimal places of precision)
+
+▣ %Lf (long double):
+
+• Corresponding Data Type: long double
+• Size: 10 bytes (on most platforms)
+• Range: Approximately 3.4E-4932 to 1.1E+4932 (19 decimal places of precision)
+
+▣ %s (string):
+
+• Corresponding Data Type: char[] or char*
+• Size: Depends on the length of the string (variable)
+
+▣ %p (pointer):
+
+• Corresponding Data Type: void*
+• Size: Depends on the system architecture (e.g., 4 bytes on 32-bit systems, 8 bytes on 64-bit systems)
+
+// concept : variable
+
+#include<stdio.h>
+
+void main(){
+    // int age = 29;
+    // printf("%d",age);
+
+    // float num1 = 10.5, num2 = 20.5;
+    // printf("%f\n", num1);
+    // printf("%.2f", num2);
+
+    // char my_name_first_letter = 'B';
+    // printf("%c\n", my_name_first_letter);
+    // printf("%d", sizeof(my_name_first_letter));
+
+    // int num1 = 10, num2 = 10;
+    // printf("%d, %d", sizeof(num1), sizeof(num2));
+}

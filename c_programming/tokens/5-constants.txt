@@ -1,0 +1,13 @@
+// concept : constant
+
+#include<stdio.h>
+
+void main(){
+    //float PI = 3.14;
+    //PI = 20.4;
+    //printf("%.2f", PI);
+
+    const float PI = 3.14;
+    PI = 20.4;
+    printf("%.2f", PI);
+}

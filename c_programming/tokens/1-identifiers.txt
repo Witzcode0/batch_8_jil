@@ -21,3 +21,8 @@ _first_name
 @cProgramming
 if_yes
 level1_
+
+snack_case: first_name, area_of_circle
+camelCase: firstName, areaOfCircle
+PasclCase: FirstName, LastName, AreaOfCircle
+CNSTANT: FIRST_NAME, AREA_OF_CIRCLE

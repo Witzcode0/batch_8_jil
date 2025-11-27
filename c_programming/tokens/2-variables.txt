@@ -23,3 +23,28 @@ Example:
 
 int age = 19;
 float weight = 34.67;
+
+// concept : variable
+
+#include<stdio.h>
+
+void main(){
+    // int age = 29;
+    // printf("%d",age);
+
+    // float num1 = 10.5, num2 = 20.5;
+    // printf("%f\n", num1);
+    // printf("%.2f", num2);
+
+    // char my_name_first_letter = 'B';
+    // printf("%c\n", my_name_first_letter);
+    // printf("%d", sizeof(my_name_first_letter));
+
+    // int num1 = 10, num2 = 10;
+    // printf("%d, %d", sizeof(num1), sizeof(num2));
+
+    int num = 10;
+    printf("without upadeted value : %d\n", num);
+    num = 20;
+    printf("upadeted value : %d", num);
+}
