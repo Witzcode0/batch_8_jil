@@ -1,0 +1,28 @@
+In C programming, an operator is a symbol that instructs the compiler to perform a specific mathematical, logical, or other operation on one or more operands. Operands are the values or variables upon which the operator acts.
+
+Example
+
+c = a + b
+here,
+c, a, b - Operands
+=, +, - operators
+
+Types of Operators in C:
+------------------------
+C provides a rich set of built-in operators, categorized as follows:
+
+    1] Arithmetic Operators: Perform mathematical calculations (e.g., +, -, *, /, %).
+
+    2] Relational Operators: Compare two values and return a boolean result (true or false) (e.g., ==, !=, >, <, >=, <=).
+
+    3] Logical Operators: Combine or modify boolean expressions (e.g., && (AND), || (OR), ! (NOT)).
+
+    4] Bitwise Operators: Operate on individual bits of integer data (e.g., &, |, ^, ~, <<, >>).
+
+    5] Assignment Operators: Assign a value to a variable (e.g., =, +=, -=, *=, /=).
+
+    6] Conditional (Ternary) Operator: A shorthand for if-else statements (e.g., condition ? expression1 : expression2).
+
+    7] Increment/Decrement Operators: Increase or decrease the value of a variable by one (e.g., ++, --).
+
+    8] Special Operators: Include sizeof (determines the size of a variable or data type), & (address-of operator), * (pointer dereference operator), and the comma operator (,).
