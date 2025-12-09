@@ -1,0 +1,66 @@
+Conditional statements in C are programming constructs that allow a program to make decisions and control the flow of execution based on whether a specified condition is true or false. They are essential for creating dynamic and flexible programs that can handle different inputs and scenarios. 
+
+The main types of conditional statements in C are:
+
+if statement: Executes code if a condition is true.
+
+syntax:
+
+if (condition) {
+    // code of block
+}
+
+if-else statement: Executes one block of code if the condition is true and another if it is false.
+
+syntax:
+
+if (condition) {
+    // Code to execute if the condition is true
+} else {
+    // Code to execute if the condition is false
+}
+
+else-if ladder: Checks multiple conditions in sequence, executing the code block for the first true condition.
+
+syntax:
+
+if (condition1) {
+    // Code if condition1 is true
+} else if (condition2) {
+    // Code if condition1 is false and condition2 is true
+} else if (condition3) {
+    // Code if condition1 is false and condition3 is true
+} else {
+    // Code if none are true
+}
+
+
+nested if-else statements: An if or if-else statement within another to handle complex decisions.
+
+syntax:
+
+if (condition1) {
+    if(condition2){
+
+    }else{
+
+    }
+}else{
+
+}
+
+switch statement: Selects a code block to execute based on a variable's value, using case labels and break statements.
+
+switch (expression) {
+    case constant1:
+        // Code block
+        break;
+    case constant2:
+        // Code block
+        break;
+    case constant3:
+        // Code block
+        break;
+    default:
+        // Code block
+}
