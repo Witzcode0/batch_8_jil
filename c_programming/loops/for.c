@@ -465,6 +465,8 @@ int main() {
 }
 
 
+// https://witzcode.pythonanywhere.com/technology/2/55/?wz_tech=C%20programming&wz_category=Number-Patterns
+
 5 4 3 2 1 
   4 3 2 1 
     3 2 1 

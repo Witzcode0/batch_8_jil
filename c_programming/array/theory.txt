@@ -1,0 +1,34 @@
+An array in C is a fundamental data structure used to store a fixed-size, sequential collection of elements of the same data type in contiguous memory locations. Instead of declaring separate variables for each value, you can use a single array variable name to manage them efficiently using index numbers. 
+
+Key Concepts
+    - Homogeneous Data Type: All elements in an array must be of the same data type, such as int, float, or char.
+    - Fixed Size: The size of an array is determined at compile time and cannot be changed during program execution.
+    - Contiguous Memory: Elements are stored in adjacent memory addresses, which allows for fast, direct (random) access to any element via its index.
+    - Zero-Based Indexing: Array indices start from 0. The first element is at index 0, the second at index 1, and the last element is at index size - 1. 
+
+Single dimension array
+syntax:
+data_type array_name[size]; // declare
+
+initialize:
+Example:
+float students[20] = {67.00, 57.00, 69.00, 77.00, 97.00};
+
+
+float stu1 = 67.00;
+float stu2 = 57.00;
+float stu3 = 69.00;
+float stu4 = 77.00;
+float stu5 = 97.00;
+
+multidimension
+
+syntax : 
+data_type array_name[row][col];
+
+Example:
+int matrix[3][2] = {
+    {1,2},
+    {3,4},
+    {5,6}
+}
