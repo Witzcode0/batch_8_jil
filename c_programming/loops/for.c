@@ -484,3 +484,22 @@ int main() {
 3 2 1 
 2 1 
 1
+
+#include <stdio.h>
+//            row num
+// 5 4 3 2 1  1   5 - 0 = 5
+// 4 3 2 1    2   5 - 1 = 4
+// 3 2 1      3   5 - 2 = 3
+// 2 1        4   5 - 3 = 2
+// 1          5   5 - 4 = 1
+int main() {
+    int num = 5;
+    for(int row = 1; row <= num; row++){
+        for(int col = num - row + 1; col >= 1; col--){
+            printf("%d ", col);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
